@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Glob</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            max-width: 900px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            flex: 1;
+            background: url(img/login.jpeg) no-repeat center center;
+            background-size: cover;
+            border-radius: 10px 0 0 10px;
+        }
+        .form-container {
+            flex: 1;
+            padding: 40px;
+            border-radius: 0 10px 10px 0;
+        }
+        .form-container h1 {
+            margin-bottom: 20px;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff6f00;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #e65c00;
+        }
+        .form-container .social-signup {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .form-container .social-signup img {
+            width: 48px;
+            height: 48px;
+            cursor: pointer;
+        }
+        .terms {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container"></div>
+        <div class="form-container">
+            <h1>Sign up</h1>
+            <form>
+                <input type="text" name="first-name" placeholder="First Name">
+                <input type="text" name="last-name" placeholder="Last Name">
+                <input type="email" name="email" placeholder="Email">
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <input type="password" name="password" placeholder="Password">
+                <input type="password" name="confirm-password" placeholder="Confirm Password">
+                <div class="terms">
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms">I agree to all the <a href="#">Terms</a> and <a href="#">Privacy Policies</a></label>
+                </div>
+                <button type="submit">Create account</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+            <div class="social-signup">
+                <img src="https://image.flaticon.com/icons/png/512/733/733547.png" alt="Facebook">
+                <img src="https://image.flaticon.com/icons/png/512/2991/2991148.png" alt="Google">
+                <img src="https://image.flaticon.com/icons/png/512/733/733579.png" alt="Apple">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
