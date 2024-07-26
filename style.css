@@ -396,6 +396,9 @@ h3 {
     border-radius: 15px;
     max-width: 1200px;
     margin: 40px auto;
+    position: absolute;
+    margin-left: 200px;
+   
 }
 .subscribe-content {
     max-width: 600px;
@@ -443,6 +446,8 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin-top: 250px;
+    padding-top: 250px;
 }
 footer .footer-column {
     margin: 10px;
@@ -484,3 +489,4 @@ footer ul li a:hover {
     font-size: 20px;
     color: #000;
 }
+

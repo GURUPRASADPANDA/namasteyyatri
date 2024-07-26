@@ -101,7 +101,7 @@
     line-height: 32.55px;
     text-align: left;
 }
-.grid,.journey  button {
+.grid button,.journey  button {
     width: 287px;
     height: 62px;
     border-radius: 50px;
@@ -116,15 +116,24 @@
     cursor: pointer;
 }
 .youtube{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: inline-block;
+}
+.yt{
     width: 1174px;
     height: 569px;
-    top: 2195px;
-    left: 133px;
-    gap: 0px;
-    border-radius:50px;
-    /* position: relative; */
-    display: inline-block;
-
+    border-radius:30px;
+    object-fit:cover;
+    display: block;
+}
+.ytlogo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    padding-left: 334.5;
 }
 
 /* footer */
@@ -138,6 +147,9 @@
     border-radius: 15px;
     max-width: 1200px;
     margin: 40px auto;
+    position: absolute;
+    margin-left: 200px;
+   
 }
 .subscribe-content {
     max-width: 600px;
@@ -185,6 +197,8 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    margin-top: 250px;
+    padding-top: 250px;
 }
 footer .footer-column {
     margin: 10px;
@@ -233,8 +247,8 @@ footer ul li a:hover {
 <body>
     <header>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
             <a href="#">Trips</a>
             <a href="#">Services</a>
         </nav>
@@ -285,7 +299,11 @@ footer ul li a:hover {
         <div style="text-align: center; margin: 60px;">
             <button class="explore-button" >join our team</button>
         </div>
-        <img src="img/yt.jpeg" alt="video" class="youtube">
+       <div class="youtube">
+            <img src="img/yt.jpeg" alt="video" class="yt">
+            <!-- <img src="img/ytlogo.png" alt="Logo" class="ytlogo"> -->
+       </div>
+
     </div>
 
 
@@ -300,12 +318,16 @@ footer ul li a:hover {
         <input id="email" type="email" placeholder="Your email address">
         <button  id ="emailb">Subscribe</button>
     </div>
+
     <div class="subscribe-image">
         <img src="img/boat.jpeg" alt="Travel Image">
     </div>
 </div>
+
 <footer>
+    
     <div class="footer-logo">
+       
         <img src="https://your-logo-url.com" alt="Logo" width="50">
         <div>
             <h3>globe</h3>
