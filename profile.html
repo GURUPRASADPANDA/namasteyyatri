@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="procss.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+header .sign-in {
+    background-color: #ff5a00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-container {
+    display: flex;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+aside {
+    width: 300px;
+    background-color: #f5f7fa;
+    padding: 20px;
+}
+
+.profile-pic {
+    text-align: center;
+    position: relative;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.profile-pic .edit-pic {
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    background-color: #ff5a00;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.profile-details {
+    text-align: center;
+}
+
+.profile-details h2 {
+    margin: 10px 0;
+}
+
+.profile-details p {
+    margin: 5px 0;
+}
+
+.sidebar-nav {
+    margin-top: 30px;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 10px 20px;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+}
+
+.sidebar-nav a:hover, .sidebar-nav a.active {
+    background-color: #ff5a00;
+    color: #fff;
+}
+
+.profile-info {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+.profile-info h2 {
+    margin: 20px 0;
+}
+
+.profile-info form {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-info label {
+    margin-top: 10px;
+}
+
+.profile-info input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.profile-info button {
+    background-color: #ff5a00;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+.subscribe-section {
+    background-color: #d1e7dd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 750px;
+    margin: 40px auto;
+    position: absolute;
+    margin-left: 341px;
+   
+}
+.subscribe-content {
+    max-width: 600px;
+}
+.subscribe-content h1 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+}
+.subscribe-content p {
+    margin: 0 0 20px 0;
+}
+.subscribe-content input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    width: calc(100% - 120px);
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.subscribe-content button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.subscribe-content button:hover {
+    background-color: #444;
+}
+.subscribe-image {
+    max-width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.subscribe-image img {
+    width: 100%;
+    height: auto;
+}
+footer {
+    background-color: #95c3a6;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 250px;
+    padding-top: 150px;
+}
+footer .footer-column {
+    margin: 10px;
+    max-width: 200px;
+}
+footer h3 {
+    margin-top: 0;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    margin: 5px 0;
+}
+footer ul li a {
+    text-decoration: none;
+    color: #000;
+}
+footer ul li a:hover {
+    text-decoration: underline;
+}
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+.footer-logo img {
+    margin-right: 10px;
+}
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+}
+.social-icons a i {
+    font-size: 20px;
+    color: #000;
+}
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="about.html" style="text-decoration: none;"> <h2 style="padding-top: 20px;color: rgb(0, 0, 0);padding-top: 0px; margin-top: 0px;">NAMASTEY YATRI</h2></a></h2>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="#">Popular Destinations</a>
+                <a href="#">Our Packages</a>
+                <a href="#">Help</a>
+            </nav>
+            <a href="login.html" class="sign-in" style="text-decoration: none;">Sign In</a>
+        </div>
+    </header>
+    <main>
+        <div class="profile-container">
+            <aside>
+                <div class="profile-pic">
+                    <img src="img/profilr.jpeg" alt="Muthu Rana">
+                    <span class="edit-pic">&#9998;</span>
+                </div>
+                <div class="profile-details">
+                    <h2>Muthu Rana</h2>
+                    <p><span class="icon-location">&#x1F4CD;</span> Gothenburg</p>
+                    <p><span class="icon-birthday">&#128197;</span> 16th February</p>
+                </div>
+                <nav class="sidebar-nav">
+                    <a href="#">Profile Informations</a>
+                    <a href="#">Booking History</a>
+                    <a href="#">Newsletter Subscription</a>
+                    <a href="#">Manage Notifications</a>
+                </nav>
+            </aside>
+            <section class="profile-info">
+                <h2>Personal Information</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" value="Muthu Rana">
+                    <label for="dob">Date Of Birth:</label>
+                    <input type="date" id="dob" value="1886-03-15">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" value="+91-7845205482">
+                    <label for="location">Location:</label>
+                    <input type="text" id="location" value="Bhubaneswar">
+                    <button type="submit">Save</button>
+                </form>
+                <h2>Security</h2>
+                <form>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" value="muthurana18@gmail.com">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" value="********">
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" value="********">
+                    <button type="submit">Save</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+<!-- FOOTER -->
+
+    <div class="subscribe-section">
+        <div class="subscribe-content">
+            <h1>Subscribe Newsletter</h1>
+            <p>The Travel</p>
+            <p>Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
+            <input id="email" type="email" placeholder="Your email address">
+            <button  id ="emailb">Subscribe</button>
+        </div>
+    
+        <div class="subscribe-image">
+            <img src="img/boat.jpeg" alt="Travel Image">
+        </div>
+    </div>
+    <footer>
+    
+    <div class="footer-logo">
+       
+        <img src="https://your-logo-url.com" alt="Logo" width="50">
+        <div>
+            <h3>globe</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-column">
+        <h3>Our Destinations</h3>
+        <ul>
+            <li><a href="#">Canada</a></li>
+            <li><a href="#">Alaska</a></li>
+            <li><a href="#">France</a></li>
+            <li><a href="#">Iceland</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>Our Activities</h3>
+        <ul>
+            <li><a href="#">Northern Lights</a></li>
+            <li><a href="#">Cruising & Sailing</a></li>
+            <li><a href="#">Multi-activities</a></li>
+            <li><a href="#">Kayaking</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>Travel Blogs</h3>
+        <ul>
+            <li><a href="#">Bali Travel Guide</a></li>
+            <li><a href="#">Sri Lanka Travel Guide</a></li>
+            <li><a href="#">Peru Travel Guide</a></li>
+            <li><a href="#">Bali Travel Guide</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>About Us</h3>
+        <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Work with us</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h3>Contact Us</h3>
+        <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Work with us</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
