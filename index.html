@@ -5,18 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namastey Yatri</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
     <header>
         <div class="header-content">
-           <a href="about.html" style="text-decoration: none;"> <h2 style="padding-top: 20px;color: white; ">NAMASTEY YATRI</h2></a></h2>
+           <a href="about.html"> <h2 style="padding-top: 20px;color: white; ">NAMASTEY YATRI</h2></a></h2>
            
             <nav>
-                <a href="about.html">About</a>
-                <a href="login.html"class="ef">Login</a>
-                <a href="signup.html" >Sign Up</a>
-                <a href="profile.html" class="ef">Profile</a>
+                    <ul class="sidebar">
+                      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                      <li><a href="about.html" class="ef" >About</a></li>
+                      <li><a href="login.html"class="ef">Login</a></li>
+                      <li><a href="signup.html" class="ef" >Sign Up</a></li>
+                      <li><a href="profile.html" class="ef">Profile</a></li>
+                    </ul>
+                    <ul class="menu">
+                        <li><a href="about.html" class="ef" >About</a></li>
+                        <li><a href="login.html"class="ef">Login</a></li>
+                        <li><a href="signup.html"   class="ef" >Sign Up</a></li>
+                        <li><a href="profile.html" class="ef">Profile</a></li>
+                      <li class="menu-button" onclick=showSidebar()><a href="#" ><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#ffffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    </ul>
             </nav>
+            <script>
+                function showSidebar(){
+                  const sidebar = document.querySelector('.sidebar')
+                  const menu = document.querySelector('.menu')
+                  sidebar.style.display = 'flex'
+                  menu.style.display = 'none'
+
+                }
+                function hideSidebar(){
+                  const sidebar = document.querySelector('.sidebar')
+                  const menu = document.querySelector('.menu')
+                  sidebar.style.display = 'none'
+                  menu.style.display = 'flex'
+                 
+                }
+              </script>
+
+
+
+
+
             <div class="best-of-best">
                 <p class="highlight">Best Of The Best</p>
                 <p style="padding-top: 20px;"><span id="land">Originated from the best</span><br><span id="land"> kept secret of India.</span></p>
@@ -112,7 +145,7 @@
 
     </div>
 
-   <div style="font-family: DM Sans;font-size: 60px;font-weight: 500;line-height: 78.12px;text-align: left;margin-left: 30px;">Glimpse of how we work</div>
+   <div style="font-family: DM Sans;font-size: 60px;font-weight: 500;line-height: 78.12px;text-align: left;margin-left: 30px;" id="glimpse">Glimpse of how we work</div>
 
 
     <div class="container1">
@@ -135,6 +168,7 @@
                     <h2>Pay and Go</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
                     <a href="#">Learn More →</a>
+                    
                 </div>
             </div>
             <div class="flex-container">

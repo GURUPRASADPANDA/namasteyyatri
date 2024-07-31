@@ -43,25 +43,89 @@ header h1 {
     left: 20px;
 }
 
-nav {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+nav{
+    width: 1250px;
+    margin-top:-30px ;
 }
 
-nav a {
-    color: white;
+  nav ul{
+    float: right;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav li{
+    height: 50px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 30px;
     text-decoration: none;
+    display: flex;
     margin-left: 20px;
-    font-size: 1em;
-}
+    font-size: 20px;
+    padding: 7px 13px;
+    color: rgb(255, 255, 255);
+  }
 
-nav .ef{
-    background-color: white;
-    color: black;
+  nav a{
+   
+    color: rgb(255, 255, 255);
     padding: 5px 10px;
-    border-radius: 5px;
+    
+
+  }
+
+nav a:hover{
+    color: #8c8e8d;
+    transition: .4s;
+   
 }
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+  @media(max-width: 360px){
+    .hideOnMobile{
+      display: none;
+    }
+    .menu-button{
+      display: block;
+    }
+  }
+  @media(max-width: 360px){
+    .sidebar{
+      width: 100%;
+    }
+  }
+
+
+/* side */
+
 
 .best-of-best {
     margin-top: 50px;
@@ -186,19 +250,10 @@ nav .ef{
 .service{
     width: 1300px;
     height: 824px;
-    /* top: 2556.9px; */
     left: 70px;
-    gap: 0px;
-   /* // display: flex;
-    flex-wrap: wrap;
-    gap: 10px; */
-
-
     justify-content: center;
     align-items: center;
     height: 100vh;
-
-    
 }
 * {
     box-sizing: border-box;
@@ -490,4 +545,56 @@ footer ul li a:hover {
     font-size: 20px;
     color: #000;
 }
-
+@media(width <= 360px){
+.body{
+    margin: 0PX;
+    padding: 0PX;
+}
+header {
+    border-radius: 10px;
+    width: 1272px;
+    height: 764px;
+    margin: -25px;
+}
+nav{
+    padding-right: 20px;
+}
+.header2 {
+    background: rgba(0, 0, 0, 1);
+    background-image: url(img/rate.png);
+    width:1000px;
+    height: 259px;
+    top: 1303px;
+    border-radius: 32px 32px 32px 32px;
+    opacity: 0px;
+    margin-left: 150px;    
+}
+#about{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45.57px;
+    text-align: left;
+    word-spacing: 10px;
+    margin: 30px;
+    width: 1000px;
+}
+#rectangle{
+    width: 1228px;
+    height: 350px;
+    
+}
+.service{
+    margin-left: -50px;
+}
+#c2{
+    width: 550px;
+    margin-left: -20px;
+}
+#c3{
+    width: 550px;
+    margin-left: -20px;
+}
+#glimpse{
+    width:1000px;
+    margin: 70px;
+}
