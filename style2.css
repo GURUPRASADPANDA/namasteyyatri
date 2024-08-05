@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 30px;
@@ -561,106 +562,199 @@ footer ul li a:hover {
     color: #000;
 }
 
+/* 
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 10px;
+    }
 
+    .highlight {
+        width: 100%;
+        padding-top: 50px;
+    }
 
+    #land {
+        font-size: 40px;
+    }
 
+    .header-content {
+        max-width: 100%;
+        padding: 0 10px;
+    }
 
+    nav {
+        width: 100%;
+    }
 
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
+    nav a {
+        padding: 10px;
+        font-size: 16px;
+    }
 
+    .best-of-best h2 {
+        font-size: 2em;
+    }
 
+    .best-of-best p {
+        font-size: 1em;
+    }
 
+    .search-bar input {
+        width: 100%;
+    }
 
+    .header2 {
+        width: 100%;
+        margin-left: 0;
+    }
 
-@media(width <= 360px){
-.body{
-    margin: 0PX;
-    padding: 0PX;
-    max-width:550px ;
-}
-header {
-    border-radius: 10px;
-    width: 1272px;
-    height: 764px;
-    margin: -25px;
-}
-nav{
-    padding-right: 20px;
-}
-.header2 {
-    background: rgba(0, 0, 0, 1);
-    background-image: url(img/rate.png);
-    width:1000px;
-    height: 259px;
-    top: 1303px;
-    border-radius: 32px 32px 32px 32px;
-    opacity: 0px;
-    margin-left: 150px;    
-}
-#about{
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 45.57px;
-    text-align: left;
-    word-spacing: 10px;
-    margin: 30px;
-    width: 1000px;
-}
-#rectangle{
-    width: 1228px;
-    height: 350px;
-    
-}
-.service{
-    margin-left: -50px;
-}
-#c2{
-    width: 550px;
-    margin-left: -20px;
-}
-#c3{
-    width: 550px;
-    margin-left: -20px;
-}
-#glimpse{
-    width:1000px;
-    margin: 70px;
-}
-#item1 {
-    margin-top: -350px;
-}
-#item2{
-    margin-top: -236px;
-}
-#main{
-    width:1300px;
-    margin-left: -50px;
-    display: block;
-}
-#Our h1{
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 45.57px;
-}
-#Our h2{
-    font-size: 60px;
-    font-weight: 500;
-    line-height: 72.61px;
-}
-.packages{
-    margin-top: 100px;
-    display:block;
-    margin-left: 40px;
-}
-.package h3,p{
-    font-size: 40px;
-}
-.subscribe-section{
-    width: 1000px;
-    margin-left: 130px;
-}
-footer{
-    width:1300px;
-}
+    #rectangle {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
 
+    .service {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .large-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-box {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-item img {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .packages {
+        grid-template-columns: 1fr;
+    }
+
+    .subscribe-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    footer .footer-column {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+} */
+
+@media (max-width: 360px) {
+    header {
+       marg
+    }
+
+    .highlight {
+        padding-top: 20px;
+    }
+
+    #land {
+        font-size: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav a {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .best-of-best h2 {
+        font-size: 1.5em;
+    }
+
+    .best-of-best p {
+        font-size: 0.9em;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+
+    .header2 {
+        width: 100%;
+    }
+
+    #rectangle {
+        width: 100%;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .large-image img {
+        width: 100%;
+    }
+
+    .text-box {
+        width: 100%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .flex-item img {
+        width: 100%;
+    }
+
+    .packages {
+        grid-template-columns: 1fr;
+    }
+
+    .subscribe-section {
+        padding: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .footer-column {
+        max-width: 100%;
+    }
 }
