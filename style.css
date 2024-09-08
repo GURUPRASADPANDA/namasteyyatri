@@ -237,8 +237,8 @@ nav a:hover{
     font-size: 16px;
 }
 #rectangle{
-    background-image: url(img/land2.jpeg);
-    width: 1450px;
+    background-image: url(img/rectangle.png);
+    width: 1460px;
     height: 350px;
     top: 2086.9px;
     gap: 0px;
@@ -260,6 +260,7 @@ nav a:hover{
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    
 }
 .card {
     position: relative;
@@ -271,13 +272,25 @@ nav a:hover{
     width: 105%;
     height: 100%;
 }
-
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+   
+    text-align: left;
+    
+}
 #c1{
     width: 640px;
     height: 500px;
     left: 30px;
     flex-wrap: wrap;
     gap: 10px;
+    /* filter: brightness(90%); */
+      
+      
 }
 
 #c2{
@@ -285,23 +298,14 @@ nav a:hover{
     height: 240px;
     left: 750px;
     top: -500px;
+    color: #e0ac13;
 }
 #c3{
     width: 640px;
     height: 240px;
     top: -480px;
     left: 750px;
-    
-}
-
-.text-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px;
-    color: white;
-    text-align: left;
+    color: #ffffff;
 }
 .text-overlay h1 {
     margin: 0;
